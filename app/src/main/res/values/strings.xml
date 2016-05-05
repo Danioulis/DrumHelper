@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Drum Helper</string>
+
+    <string name="buttonStartStop">Start/Stop</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="metronome">Metronome</string>
+    <string name="rudimentMetronome">Rudiment Metronome</string>
+
+    <string name="title_activity_metronome">Metronome</string>
+</resources>
