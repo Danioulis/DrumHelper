@@ -1,10 +1,15 @@
 <resources>
     <string name="app_name">Drum Helper</string>
 
-    <string name="buttonStartStop">Start/Stop</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
-    <string name="metronome">Metronome</string>
-    <string name="rudimentMetronome">Rudiment Metronome</string>
-
+    <string name="buttonMetronome">Metronome</string>
+    <string name="buttonRudimentMetronome">Rudiment Metronome</string>
     <string name="title_activity_metronome">Metronome</string>
+    <string name="textTempo">Tempo: </string>
+    <string name="BPM">B.P.M.</string>
+    <string name="buttonPlusOne">+1</string>
+    <string name="buttonMinusOne">-1</string>
+    <string name="buttonPlusFive">+5</string>
+    <string name="buttonMinusFive">-5</string>
+    <string name="buttonPlusTen">+10</string>
+    <string name="buttonMinusTen">-10</string>
 </resources>
