@@ -16,95 +16,103 @@
 
         <LinearLayout
             android:orientation="horizontal"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp">
+            android:layout_marginBottom="20dp">
 
-            <TextView
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="@string/textTempo"
-                android:id="@+id/textViewTempo"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_weight="1" />
+                android:layout_weight="1">
 
-            <EditText
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/buttonMinusOne"
+                    android:id="@+id/buttonMinusOne"
+                    android:onClick="alterTempo"
+                    android:layout_gravity="center" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/buttonMinusFive"
+                    android:id="@+id/buttonMinusFive"
+                    android:onClick="alterTempo"
+                    android:layout_gravity="center" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/buttonMinusTen"
+                    android:id="@+id/buttonMinusTen"
+                    android:onClick="alterTempo"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <Button
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:ems="10"
-                android:id="@+id/editTextTempo"
-                android:text="60"
-                android:layout_alignBottom="@+id/textViewTempo"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
+                android:layout_height="fill_parent"
+                android:text="New Button"
+                android:id="@+id/buttonTempo"
                 android:layout_weight="2"
-                android:textAlignment="textEnd" />
+                android:layout_gravity="center" />
 
-            <TextView
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/BPM"
-                android:id="@+id/textViewBPM"
-                android:layout_weight="1" />
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/buttonPlusOne"
+                    android:id="@+id/buttonPlusOne"
+                    android:onClick="alterTempo"
+                    android:layout_gravity="center" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/buttonPlusFive"
+                    android:id="@+id/buttonPlusFive"
+                    android:onClick="alterTempo"
+                    android:layout_gravity="center" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/buttonPlusTen"
+                    android:id="@+id/buttonPlusTen"
+                    android:onClick="alterTempo"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
         </LinearLayout>
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp">
+            android:layout_height="wrap_content">
 
-            <Button
+            <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/buttonPlusOne"
-                android:id="@+id/buttonPlusOne"
-                android:layout_weight="1"
-                android:onClick="alterTempo" />
+                android:text="@string/checkBoxSound"
+                android:id="@+id/checkBoxSound"
+                android:layout_weight="1" />
 
-            <Button
+            <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/buttonMinusOne"
-                android:id="@+id/buttonMinusOne"
+                android:text="@string/checkBoxFlash"
+                android:id="@+id/checkBoxFlash"
                 android:layout_weight="1"
-                android:onClick="alterTempo" />
+                android:textAlignment="textStart" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/buttonPlusFive"
-                android:id="@+id/buttonPlusFive"
-                android:layout_weight="1"
-                android:onClick="alterTempo" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/buttonMinusFive"
-                android:id="@+id/buttonMinusFive"
-                android:layout_weight="1"
-                android:onClick="alterTempo" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/buttonPlusTen"
-                android:id="@+id/buttonPlusTen"
-                android:layout_weight="1"
-                android:onClick="alterTempo" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/buttonMinusTen"
-                android:id="@+id/buttonMinusTen"
-                android:layout_weight="1"
-                android:onClick="alterTempo" />
         </LinearLayout>
+
     </LinearLayout>
 </RelativeLayout>

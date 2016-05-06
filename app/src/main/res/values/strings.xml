@@ -12,4 +12,6 @@
     <string name="buttonMinusFive">-5</string>
     <string name="buttonPlusTen">+10</string>
     <string name="buttonMinusTen">-10</string>
+    <string name="checkBoxSound">Sound</string>
+    <string name="checkBoxFlash">Flash</string>
 </resources>
