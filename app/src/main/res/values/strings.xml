@@ -16,4 +16,5 @@
     <string name="checkBoxFlash">Flash</string>
     <string name="tempo_placeholder">Tempo</string>
     <string name="tempo_hint">Please enter desired tempo:</string>
+    <string name="buttonStartStop">Start/Stop</string>
 </resources>
