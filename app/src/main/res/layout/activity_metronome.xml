@@ -7,7 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.prograstinando.daniel.drumhelper.Metronome">
+    tools:context="com.prograstinando.daniel.drumhelper.Metronome"
+    android:background="@color/background_floating_material_dark">
 
     <LinearLayout
         android:orientation="vertical"
@@ -54,7 +55,7 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
-                android:text="New Button"
+                android:text="Tempo"
                 android:id="@+id/buttonTempo"
                 android:layout_weight="2"
                 android:layout_gravity="center" />
@@ -102,7 +103,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/checkBoxSound"
                 android:id="@+id/checkBoxSound"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:checked="true" />
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -114,5 +116,30 @@
 
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/buttonStartStop"
+                android:id="@+id/buttonStartStop"/>
+
+        </LinearLayout>
+
     </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/flash"
+        android:background="#ffffff"
+        android:alpha="0"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:contentDescription="flash"
+        android:adjustViewBounds="false" />
 </RelativeLayout>
